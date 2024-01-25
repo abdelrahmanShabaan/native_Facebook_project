@@ -22,3 +22,22 @@ body {
 .container h1 {
     color: #2c83f2;
 }
+
+header {
+    width: 320px;
+    height:  350px;
+    position: absolute;
+    top:20%;
+    left: 57%;
+    background-color: #F0F2F5;
+
+}
+
+.box input {
+        width:  75%;
+        margin: 10px;
+        padding: 13px 18px;
+        margin-top: 18px;
+        left: 57%;
+}
+
