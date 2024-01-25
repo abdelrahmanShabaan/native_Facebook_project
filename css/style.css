@@ -16,6 +16,7 @@ body {
         left: 14px;
         top: 30%;
         font-size: 25px;
+        
 
 }
 
@@ -38,8 +39,6 @@ header {
         margin: 10px;
         padding: 13px 18px;
         margin-top: 18px;
-        left: 57%;
-        background-color: #F0F2F5;
 }
 
 .link {
@@ -52,14 +51,38 @@ header {
         border-radius: 7px;
 
 }
+.link a {
+    text-decoration: none;
+    color: #2C83F2;
+    font-size: 20px;
+
+}
+
 
 .link1 {
     text-align: center;
     margin-top: 12px;
 
 }
+.link1 a {
+    text-decoration: none;
+    color: #2C83F2;
+    font-size: 15px;
+
+}
 
 .link2 {
         text-align: center;
-        margin-top: 12px;
+        margin-top: 40px;
+        width: 50%;
+        margin: 23%;
+        background-color: #36A420;
+        padding: 10px;
+        border-radius: 7px;
+}
+
+.link2 a{
+    text-decoration: none;
+    color:white;
+
 }
