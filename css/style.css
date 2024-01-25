@@ -1,89 +1,85 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
-
 *{
-    padding:0;
-    margin:0;
+    margin: 0%;
+    padding: 0%;
+    background-color:#dfe3ee;
 }
+.textbox{
+    margin-top: 200px;
+    margin-left: 150px;
 
-body {
-    background-color: #F0F2F5;
-    font-family: 'Roboto',sans-serif;
 }
-
+h1{
+    font-size: 55px;
+    color: #1877f2;
+    font-family: sans-serif;
+}
+h2{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+}
 .container{
-        position: absolute;
-        left: 14px;
-        top: 30%;
-        font-size: 25px;
-        
+    
+    width: 400px;
+    height: 350px;
+    margin-top: -194px;
+    margin-right: 160px;
+    float: right;
+    border-radius: 12px;
+    background-color: white;
+    width: 390px;
+    height: 355px;  
+   text-align: center;
+   
+    
+}
+.form{
+    float: right;
+   background-color: white;
+    margin-top: -12px;
+    padding: 20px;
+}
+.form input{
+    margin-top: 10px;
+margin-left: -10px;
+border-radius: 8px;
+margin-right: -10px;
+    padding:17px;
+    width: 332px;
 
 }
+button{
+    margin-top: 15px;
+    background-color:#1877f2 ;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
 
-.container h1 {
-    color: #2c83f2;
-}
-
-header {
-    width: 320px;
-    height:  350px;
-    position: absolute;
-    top:20%;
-    left: 57%;
-    background-color: #F0F2F5;
 
 }
-
-.box input {
-        width:  75%;
-        margin: 10px;
-        padding: 13px 18px;
-        margin-top: 18px;
-        margin-left: 21px;
+p{
+    background-color: white;
+    font-size: 16px;
+    color: #1877f2;
+    margin-top: 10px;
 }
-
-.link {
-        width: 81%;
-        text-align: center;
-        background-color: #2C83F2;
-        margin-top: 10px;
-        margin-left: 23px;
-        padding: 11px;
-        border-radius: 7px;
-
+p a{
+    color: #1877f2;
+    background-color: white;
 }
-.link a {
-    text-decoration: none;
-    color: #2C83F2;
-    font-size: 20px;
-
+.btn {
+    padding: 7px;
+    margin-top: 15px;
+   background-color: white;
+   margin-left: 60px;
+   margin-right: 60px;
 }
-
-
-.link1 {
-    text-align: center;
-    margin-top: 12px;
-
-}
-.link1 a {
-    text-decoration: none;
-    color: #2C83F2;
-    font-size: 15px;
-
-}
-
-.link2 {
-        text-align: center;
-        margin-top: 40px;
-        width: 50%;
-        margin: 23%;
-        background-color: #36A420;
-        padding: 10px;
-        border-radius: 7px;
-}
-
-.link2 a{
-    text-decoration: none;
-    color:white;
-
+.btn button{
+    background-color:#1b9c24 ;
+   
 }
