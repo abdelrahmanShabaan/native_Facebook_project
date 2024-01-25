@@ -3,6 +3,7 @@
     padding: 0%;
     background-color:#dfe3ee;
 }
+
 .textbox{
     margin-top: 200px;
     margin-left: 150px;
@@ -21,34 +22,34 @@ h2{
     width: 500px;
 }
 .container{
-    
     width: 400px;
     height: 350px;
     margin-top: -194px;
-    margin-right: 160px;
+    margin-right: 180px;
     float: right;
     border-radius: 12px;
     background-color: white;
     width: 390px;
     height: 355px;  
-   text-align: center;
+    text-align: center;
    
     
 }
 .form{
     float: right;
-   background-color: white;
+    background-color: white;
     margin-top: -12px;
     padding: 20px;
 }
 .form input{
     margin-top: 10px;
-margin-left: -10px;
-border-radius: 8px;
-margin-right: -10px;
+    margin-left: -10px;
+    border-radius: 8px;
+    border-color: lightgray;
+    margin-right: -10px;
     padding:17px;
     width: 332px;
-
+    background-color: white;
 }
 button{
     margin-top: 15px;
@@ -75,11 +76,12 @@ p a{
 .btn {
     padding: 7px;
     margin-top: 15px;
-   background-color: white;
-   margin-left: 60px;
+    background-color: white;
+    margin-left: 60px;
    margin-right: 60px;
+   
 }
 .btn button{
     background-color:#1b9c24 ;
-   
+
 }
