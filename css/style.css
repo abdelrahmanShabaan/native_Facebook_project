@@ -39,5 +39,19 @@ header {
         padding: 13px 18px;
         margin-top: 18px;
         left: 57%;
+        background-color: #F0F2F5;
 }
+
+.link {
+        width: 81%;
+        text-align: center;
+        background-color: #2C83F2;
+        margin-top: 10px;
+        margin-left: 23px;
+        padding: 11px;
+        border-radius: 7px;
+
+}
+
+
 
