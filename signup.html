@@ -89,7 +89,23 @@
         var username = $("#username");
         var span = $("#span");
 
-       
+        $("#submits").click(function () {
+            if (username.val().length < 5) {
+                $("#usernameError").html("Username must be at least 5 character long.");
+                return;
+            } else {
+                $("#usernameError").html("");
+            }
+
+            if (password.val() !== password2.val()) {
+                span.html("Passwords must match");
+                span.css("color", "red");
+            } else {
+                localStorage.setItem("username", username.val());
+                localStorage.setItem("password", password.val());
+                window.open("index.html", "_self");
+            }
+        });
     });
 
     </script>
