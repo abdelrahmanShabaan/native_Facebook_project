@@ -175,3 +175,27 @@ nav button {
         margin: 5px 0;
     }
 }
+
+
+body, html {
+    height: 100%;
+    background-color: #f8f9fa;
+
+}
+
+
+.row {
+margin-top: 20px;
+}
+
+.left-sidebar, .right-sidebar {
+background-color: #e9ebee;
+padding: 10px;
+}
+
+.main-feed {
+background-color: #ffffff;
+padding: 20px;
+height: 100%;
+overflow-y: auto; /* Add scrollbar if content exceeds the viewport height */
+}
