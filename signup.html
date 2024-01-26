@@ -6,6 +6,7 @@
     <title>Facebook- log in or sign up</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
@@ -19,15 +20,16 @@
                 It's free and always will be
                 <br><br>
                 <form>
-                <input type="text" placeholder="First name">
-                <input type="text" placeholder="Last name">
+                <input type="text" placeholder="First name" required id="username">
+                <input type="text" placeholder="Last name" required>
                 <br>
                 <div class="other">
                     <input type="text" placeholder="Email or mobile number">
                     <br>
-                    <input type="email" placeholder="Re-enter email or mobile number">
+                    <input type="password" placeholder="Password" required id="pass1">
                     <br>
-                    <input type="password" placeholder="New password">
+                    <input type="password" placeholder="Confirm your password" id="pass2" required>
+                    <span id="span"></span>
                     <br><br>
                 </div>
                 Birthday
@@ -65,20 +67,21 @@
                 </select>
                 <div class="right-text"><a href="#">Why do I need to provide my<br> birthday?</a></div>
                 <br>
-                </div>
-                <span class="gender">
-                <input type="radio" value="Female">Female
-                <input type="radio" value="Male">Male
-                </span>
-                <br><br>
-                <span class="policy">By clicking Sign up,you agree to out <a href="#">Terms</a> and that you have<br>read our <a href="#">Data Policy</a>, including our <a href="#"> Cookie Use</a>.</span>
-                <br><br>
-                <button class="submit btn btn-block" type="submit">Sign Up</button>
-                <br>
-                </form>
-            </div>
-        </div>
+                 </div>
+            <span class="gender">
+                <input type="radio" value="Female" name="gender">Female
+                <input type="radio" value="Male" name="gender">Male
+            </span>
+            <br><br>
+            <span class="policy">By clicking Sign up, you agree to our <a href="#">Terms</a> and that you have<br>read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.</span>
+            <br><br>
+            <button class="submit btn btn-block" type="button" id="submits">Sign Up</button>
+            <br>
+        </form>
+    </div>
+</div>
     </section>
+
 
 </body>
 </html>
