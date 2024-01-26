@@ -22,14 +22,16 @@
                 <form>
                 <input type="text" placeholder="First name" required id="username">
                 <input type="text" placeholder="Last name" required>
+                <span id="span_username"></span>
                 <br>
                 <div class="other">
                     <input type="text" placeholder="Email or mobile number" id="email" required>
+                    <span id="span_email"></span>
                     <br>
                     <input type="password" placeholder="Password" required id="pass1">
                     <br>
                     <input type="password" placeholder="Confirm your password" id="pass2" required>
-                    <span id="span"></span>
+                    <span id="span_password"></span>
                     <br><br>
                 </div>
                 Birthday
@@ -73,6 +75,7 @@
                 <input type="radio" value="Male" name="gender">Male
             </span>
             <br><br>
+            <span id="span"></span>
             <span class="policy">By clicking Sign up, you agree to our <a href="#">Terms</a> and that you have<br>read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use</a>.</span>
             <br><br>
             <button class="submit btn btn-block" type="button" id="submits">Sign Up</button>
@@ -90,35 +93,41 @@
     var username = $("#username");
     var email = $("#email");
     var span = $("#span");
+    var span_username = $("#span_username");
+    var span_email = $("#span_email");
+    var span_password = $("#span_password");
 
     $("#submits").click(function () {
         // Check if any fields are empty
         if (username.val() === "" || email.val() === "" || password.val() === "" || password2.val() === "") {
-            alert("Please fill in all fields.");
+            span.html("Please fill in all fields.");
+            span.css("color", "red");
             return;
         }
 
         // Validate email using a simple pattern
         var email_vaild = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email_vaild.test(email.val())) {
-            alert("Please enter a valid email address.");
+            span_email.html("Please enter a valid email address.");
+            span_email.css("color", "red");
             return;
         }
 
         // Username length validation
         if (username.val().length < 5) {
-            alert("Username must be at least 5 characters long.");
+            span_username.html("Username must be at least 5 characters long.");
+            span_username.css("color", "red");
             return;
         }
 
         // Password match validation
         if (password.val() !== password2.val()) {
-            span.html("Passwords must match");
-            span.css("color", "red");
+            span_password.html("Passwords must match");
+            span_password.css("color", "red");
         } else {
             localStorage.setItem("username", username.val());
             localStorage.setItem("password", password.val());
-            window.open("index.html", "_self");
+            window.open("index.html");
         }
     });
 });
