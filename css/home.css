@@ -224,3 +224,27 @@ overflow-y: auto; /* Add scrollbar if content exceeds the viewport height */
   li i {
     margin-right: 10px;
   }
+
+  .left-sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h4 {
+    color: #333;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  i {
+    margin-right: 10px;
+  }
