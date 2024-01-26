@@ -25,6 +25,10 @@ if(sessionStorage.username != null)
 // Logout function
 function logout() {
     // Clear Session Storage
+    
+    localStorage.removeItem('username');
+    localStorage.removeItem('password');
+    
     sessionStorage.removeItem('username');
     sessionStorage.removeItem('password');
 
