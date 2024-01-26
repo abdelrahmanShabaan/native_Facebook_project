@@ -43,6 +43,19 @@
         var storedUsername = localStorage.getItem("username");
         var storedPassword = localStorage.getItem("password");
 
+        function validate(e) {
+            e.preventDefault();
+            if (L.val() === storedUsername && p.val() === storedPassword) {
+                sessionStorage.setItem('username', L.val());
+                sessionStorage.setItem('password', p.val());
+                window.open("home.html");
+            } else {
+                error.html("Sorry, your password or username is not correct.");
+                error.css("color", "red");
+            }
+        }
+
+        $('form').submit(validate);
     });
 </script>
 
