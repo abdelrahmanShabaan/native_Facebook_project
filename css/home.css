@@ -199,3 +199,28 @@ padding: 20px;
 height: 100%;
 overflow-y: auto; /* Add scrollbar if content exceeds the viewport height */
 }
+
+.right-sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h4 {
+    color: #333;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  li i {
+    margin-right: 10px;
+  }
