@@ -20,7 +20,7 @@
         </div>
         <div class="col-md-6">
             <div class="form">
-                    <form action="" onsubmit="vaild(event)">
+                    <form action="" onsubmit="">
                         <input type="text" class="form-control mb-2" id="loginarea" placeholder="Enter username">
                         <input type="password" class="form-control mb-2" id="password" placeholder="Password">
                         <button class="btn btn-primary btn-block mb-2 btx">Log In</button>
@@ -45,7 +45,7 @@
 
         function validate(e) {
             e.preventDefault();
-            if (L.val() === storedUsername && p.val() === storedPassword) {
+            if (L.val() === storedUsername && p.val() === storedPassword) {  
                 sessionStorage.setItem('username', L.val());
                 sessionStorage.setItem('password', p.val());
                 window.open("home.html");

@@ -24,7 +24,7 @@
                 <input type="text" placeholder="Last name" required>
                 <br>
                 <div class="other">
-                    <input type="text" placeholder="Email or mobile number">
+                    <input type="text" placeholder="Email or mobile number" id="email" required>
                     <br>
                     <input type="password" placeholder="Password" required id="pass1">
                     <br>
@@ -83,30 +83,45 @@
     </section>
 
 <script>
-        $(document).ready(function () {
-        var password = $("#pass1");
-        var password2 = $("#pass2");
-        var username = $("#username");
-        var span = $("#span");
+    
+    $(document).ready(function () {
+    var password = $("#pass1");
+    var password2 = $("#pass2");
+    var username = $("#username");
+    var email = $("#email");
+    var span = $("#span");
 
-        $("#submits").click(function () {
-            if (username.val().length < 5) {
-                $("#usernameError").html("Username must be at least 5 character long.");
-                return;
-            } else {
-                $("#usernameError").html("");
-            }
+    $("#submits").click(function () {
+        // Check if any fields are empty
+        if (username.val() === "" || email.val() === "" || password.val() === "" || password2.val() === "") {
+            alert("Please fill in all fields.");
+            return;
+        }
 
-            if (password.val() !== password2.val()) {
-                span.html("Passwords must match");
-                span.css("color", "red");
-            } else {
-                localStorage.setItem("username", username.val());
-                localStorage.setItem("password", password.val());
-                window.open("index.html", "_self");
-            }
-        });
+        // Validate email using a simple pattern
+        var email_vaild = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email_vaild.test(email.val())) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        // Username length validation
+        if (username.val().length < 5) {
+            alert("Username must be at least 5 characters long.");
+            return;
+        }
+
+        // Password match validation
+        if (password.val() !== password2.val()) {
+            span.html("Passwords must match");
+            span.css("color", "red");
+        } else {
+            localStorage.setItem("username", username.val());
+            localStorage.setItem("password", password.val());
+            window.open("index.html", "_self");
+        }
     });
+});
 
     </script>
 
