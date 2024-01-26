@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Facebook</title>
 </head>
@@ -19,10 +20,13 @@
         </div>
         <div class="col-md-6">
             <div class="form">
-                <input type="text" class="form-control mb-2" placeholder="Enter Your Email or Phone number">
-                <input type="password" class="form-control mb-2" placeholder="Password">
-                <button class="btn btn-primary btn-block mb-2 btx">Log In</button>
-                <p class="text-center"><a href="#">Forgot password?</a></p>
+                    <form action="" onsubmit="vaild(event)">
+                        <input type="text" class="form-control mb-2" id="loginarea" placeholder="Enter username">
+                        <input type="password" class="form-control mb-2" id="password" placeholder="Password">
+                        <button class="btn btn-primary btn-block mb-2 btx">Log In</button>
+                        <p class="text-center"><a href="#">Forgot password?</a></p>
+                        <span id="error"></span>    
+                    </form>
                 <div class="btn ">
                     <a href="signup.html"><button class="btn btn-success btgm">Create New Account</button></a>
                 </div>
@@ -30,6 +34,7 @@
         </div>
     </div>
 </div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
