@@ -4,10 +4,6 @@
   :root{
       --btn-width-100: 100px;
   }
-  body{
-      margin: 0;
-      padding: 0;
-  }
   nav{
       margin: 0;
       padding: 0;
